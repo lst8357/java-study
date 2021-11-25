@@ -43,4 +43,14 @@ public class RandomWord {
 			}
 		}
 	}
+	
+	public boolean isCompleted() {
+		// 절차를 다 맞췄는지 체크해서 true or false로 리던
+		for(char c : characters) { // 단어 전체 절차 반복 검사
+			if(c=='\u0000') {
+				return false;
+			}
+		}
+		return true; // 다맞췄음
+	}
 }
