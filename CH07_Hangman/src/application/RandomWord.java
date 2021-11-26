@@ -31,7 +31,7 @@ public class RandomWord {
 			sb.append(c == '\u0000' ? '_' : c); // 못맞추면 _ 맞춘건 c
 			sb.append(' '); 
 		}
-		//System.out.println(selectWord); // 정답출력 (테스트용)
+		System.out.println(selectWord); // 정답출력 (테스트용)
 		return sb.toString(); // 선택된 랜덤 단어를 가져온다
 	}
 	
