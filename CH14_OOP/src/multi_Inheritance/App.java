@@ -8,13 +8,13 @@ public class App {
 		p1.greet();
 		p1.speak();
 		
-		Speaker p2 = new Person();
+		Speaker p2 = new Person(); //Person이 구현한 인터페이스 Speaker로 선언
 		p2.speak();
-		p2.greet();
+		//p2.greet(); Speaker 인터페이스의 추상메소드만 사용가능
 		
-		Greeter p3 = new Person();
+		Greeter p3 = new Person(); 
 		p3.greet();
-		p3.speak();
+		//p3.speak(); Greeter 인터페이스의 추상메소드만 사용가능
 	}
 
 }
